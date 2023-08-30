@@ -44,7 +44,7 @@ function getWeatherData(city) {
   city = citySearch.value;
   //Get city search, put it into Geolocation API to grab latitude and longitude values for that city.
   latLonRequestURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKEY}`;
-
+  console.log(latLonRequestURL);
   saveToLocalStorage(city);
 
   fetch(latLonRequestURL)
