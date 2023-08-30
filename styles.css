@@ -1,0 +1,18 @@
+body {
+  background-color: aliceblue;
+}
+
+#past-search-container {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 10rem;
+}
+
+#search-and-results {
+  top: 0;
+  position: fixed;
+  flex-direction: center;
+  align-items: center;
+  margin-left: 12rem;
+  width: 75%;
+}
