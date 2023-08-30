@@ -44,7 +44,6 @@ function getWeatherData(city) {
   city = citySearch.value;
   //Get city search, put it into Geolocation API to grab latitude and longitude values for that city.
   latLonRequestURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKEY}`;
-  console.log(latLonRequestURL);
   saveToLocalStorage(city);
 
   fetch(latLonRequestURL)
@@ -62,8 +61,7 @@ function getWeatherData(city) {
           return response.json();
         })
         .then(function (data) {
-          console.log("DATA", data);
-
+          //Get the id for the icon
           todaysIcon = data.list[0].weather[0].id;
 
           //Change the icon in the corner to match today's weather icon.
@@ -93,7 +91,6 @@ function getWeatherData(city) {
             dateValue = data.list[i].dt;
 
             iconId = data.list[i].weather[0].id;
-            console.log(iconId);
             weatherDescription = data.list[i].weather[0].description;
             var temperatureKelvin = data.list[i].main.temp;
             var temperatureFahrenheitValue = (
@@ -109,8 +106,6 @@ function getWeatherData(city) {
 
             var dayDiv = document.createElement("div");
             dayDiv.className += "card";
-            // dayDiv.style = "width: 14rem";
-            // dayDiv.style = "height: 31rem";
 
             var dayCardbody = document.createElement("div");
             dayCardbody.className += "card-body";
