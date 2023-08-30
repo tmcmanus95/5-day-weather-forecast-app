@@ -10,7 +10,11 @@ To use this app, type in the name of a city and click search. You can also click
 
 # Screenshot
 
+<img width="1448" alt="Screenshot 2023-08-29 at 7 08 00 PM" src="https://github.com/tmcmanus95/5-day-weather-forecast-app/assets/122508345/b9f12a73-b12d-425f-aa0c-51edcba1a65d">
+
 # Application Link
+
+https://tmcmanus95.github.io/5-day-weather-forecast-app/
 
 # License
 
